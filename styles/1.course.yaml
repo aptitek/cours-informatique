@@ -1,0 +1,345 @@
+#Class
+top-level-division: section
+number-sections: true
+subparagraph: true
+
+#Package
+
+multicol: true
+color: true
+mathspec: false
+solarized: true
+amsthm: true
+algorithm: true
+tables: true
+graphics: true
+subfigure: true
+cref: false
+verbatim-in-note: true
+#highlight-style: pygments
+
+listings:
+  - language: self
+  - basicstyle: \small\color{solarized-base02}
+  - commentstyle: \itshape\color{solarized-base0}
+  - keywordstyle: \bfseries
+  - keywordstyle:
+      index: 2 # include
+      content: \color{solarized-violet}
+  - keywordstyle:
+      index: 3 # file level
+      content: \color{solarized-orange}\bfseries
+  - keywordstyle:
+      index: 4 # access
+      content: \color{solarized-base01}\itshape
+  - keywordstyle:
+      index: 5 # behaviour modifiers
+      content: \color{solarized-base01}\bfseries
+  - keywordstyle:
+      index: 6 # types
+      content: \color{solarized-green}\bfseries
+  - keywordstyle:
+      index: 7 # literals
+      content: \color{solarized-magenta}
+  - keywordstyle:
+      index: 8 # blocks and control
+      content: \color{solarized-yellow}\bfseries
+  - keywordstyle:
+      index: 9 # lang
+      content: \color{solarized-red}\bfseries
+  - identifierstyle: \color{solarized-blue}
+  - stringstyle: \color{solarized-cyan}
+  - numbers: left
+  - numberstyle: \footnotesize
+  - stepnumber: 1
+  - firstnumber: 1
+  - frame: l
+  - framerule: 2mm
+  - rulecolor: \color{solarized-base1}
+  - tabsize: 2
+  - numberfirstline: true
+  - breaklines: true
+  - xleftmargin: 1cm
+  - backgroundcolor: \color{solarized-base2}
+syntax: false
+
+fonts:
+  main:
+    font: OpenDyslexic
+    italic: OpenDyslexic Italic
+    bold-italic: OpenDyslexic Bold-Italic
+  mono:
+    font: Recursive Mono Linear Static
+    italic: Recursive Mono Casual Static
+  math:
+    font: STIX Two Math
+    italic: STIX Two Text Italic
+  #title: Recursive Sn Lnr St XBk
+  section:
+    font: Bebas Neue
+    scale: 1.5
+  chapter:
+    font: OpenDyslexic Bold
+    scale: 1.25
+  din: DIN
+  graphikreg: Graphik LC Web Regular
+  graphikmed: Graphik LC Web Medium
+  perihelionbb: PerihelionBB-Bold
+
+elements:
+  document:
+    style: scrbook
+    #color: solarized-base03
+    #background: solarized-base3
+    options:
+      - 11pt
+      - a4paper
+      - twoside
+      - openright
+      - titlepage
+      - numbers=noenddot
+      - headinclude
+      - cleardoublepage=empty
+      - openany
+      - parskip
+  caption:
+    font: bf
+  section:
+    koma: true
+    font: sectionfont
+    prefix:
+      - Section
+      - Sections
+    ref: sec
+    number: section
+  chapter:
+    koma: true
+    font: chapterfont
+    prefix:
+      - Chapitre
+      - Chaptitre
+    ref: ch
+    number: chapter
+  figure:
+    prefix:
+      - Figure
+      - Figures
+    ref: fig
+    number: section
+  listing:
+    prefix:
+      - Listing
+      - Listings
+    ref: lst
+    number: section
+  line:
+    prefix:
+      - Ligne
+      - Lignes
+    ref: line
+    number: continous
+  table:
+    prefix:
+      - Tableau
+      - Tableaux
+    ref: tbl
+    number: section
+  quote:
+    title:
+      color: solarized-base2
+      content: \Huge “
+      font: mathfont
+      lines: 3
+  algorithm:
+    prefix:
+      - Algorithme
+      - Algorithmes
+    ref: alg
+    number: section
+  grammar:
+    prefix:
+      - Grammaire
+      - Grammaires
+    ref: grm
+    number: section
+  example:
+    theorem: true
+    title:
+      color: solarized-base2
+    border: solarized-base01
+    background: solarized-base2
+    prefix:
+      - Exemple
+      - Exemples
+    ref: ex
+  warning:
+    theorem: true
+    title:
+      color: solarized-base2
+    border: solarized-orange
+    background: solarized-base2
+    prefix:
+      - Avertissement
+      - Avertissements
+    ref: warn
+  definition:
+    theorem: true
+    title:
+      color: solarized-base2
+    border: solarized-green
+    background: solarized-base2
+    prefix:
+      - Définition
+      - Définitions
+    ref: def
+    number: section
+  equation:
+    prefix:
+      - Équation
+      - Équations
+    ref: eq
+    number: section
+  theorem:
+    theorem: true
+    title:
+      color: solarized-base2
+    border: solarized-yellow
+    background: solarized-base2
+    prefix:
+      - Theorème
+      - Theorèmes
+    ref: theo
+    number: section
+  proof:
+    boxed: true
+    alias: proofbox
+  proofbox:
+    theorem: true
+    title:
+      color: solarized-base2
+    border: solarized-red
+    background: solarized-base2
+    prefix:
+      - Preuve
+      - Preuves
+    ref: pr
+    number: section
+  lemma:
+    theorem: true
+    title:
+      color: solarized-base2
+    border: solarized-orange
+    background: solarized-base2
+    prefix:
+      - Lemma
+      - Lemmas
+    ref: lem
+    number: section
+  axiom:
+    theorem: true
+    title:
+      color: solarized-base2
+    border: solarized-magenta
+    background: solarized-base2
+    prefix:
+      - Axiome
+      - Axiomes
+    ref: axi
+    preposition: de
+
+ref-conjunction: et
+
+colorlinks:
+  link: solarized-blue
+  file: solarized-magenta
+  cite: solarized-green
+  url: solarized-cyan
+
+reference-section-title: Bibliographie
+bibliography: bibliography/bibliography.bib
+csl: bibliography/aaai.csl
+link-citations: true
+
+macros:
+  # LOGOS
+  - aptitek: \logo{logos/aptitek.svg}\space
+
+  # MATH
+  - colonvdash: \mathrel{\ooalign{\hss$\vdash$\hss\cr\kern0.6ex\raise0.15ex\hbox{\scalebox{1}{$:$}}}}
+  - curlyveeinarrow: \mathrel{\raisebox{.01em}{\rotatebox[origin=c]{90}{$\scriptstyle\pmb\curlyveedownarrow$}}}
+  - curlyveeoutarrow: \mathrel{\raisebox{.01em}{\rotatebox[origin=c]{270}{$\scriptstyle\pmb\curlyveeuparrow$}}}
+
+  - bb: \mathbb
+  - cal: \mathcal
+
+  - inci: \ensuremath{\mathrel{-\!\!\!\!\bullet\!\!\!\!-}}
+  - ingo: \ensuremath{\curlyveeinarrow\!\bullet}
+  - outgo: \ensuremath{\bullet\!\curlyveeoutarrow}
+  - lnor: \overline{\lor}
+  - lnand: \overline{\land}
+  - landor: \veeonwedge
+  - lxor: \veebar
+  - cstate: \boxonbox
+
+  - rrp: ⦈
+  - rrbp: ⦘
+  - llp: ⦇
+  - llbp: ⦗
+  - lBrace: ⟬
+  - rBrace: ⟭
+  - gtrdot: ⋗
+  - vartriangle: ▵
+  - triangledown: ▿
+  - nexists: ∄
+  - varstar: ✶
+  - smwhtsquare: ▫
+  - square: □
+  - downarrowbarred: ⤈
+  - curvearrowrightminus: ⤼
+  - rightdotarrow: ⤑
+
+header-includes:
+  # STYLE
+  - \usepackage{marginnote}
+  - \usepackage{textpos}
+  - \usepackage{scalerel}
+  - \usepackage[final]{pdfpages}
+  - \usepackage[strict]{changepage}
+  - \setlength{\TPVertModule}{1cm}
+  - |
+    \renewcommand*{\footnote}[1]{\marginnote{\begin{scriptsize}#1\end{scriptsize}}}
+  - |
+    \newcommand*{\tcbnote}[1]{\marginnote{
+      \begin{scriptsize}
+        \checkoddpage
+        \ifoddpage 
+        \begin{textblock}{2.5}(-0.5,0)#1\end{textblock}
+        \else
+        \begin{textblock}{2.5}(-1,0)#1\end{textblock}
+        \fi
+      \end{scriptsize}}}
+  - \usepackage[top=2cm, bottom=3cm, right=3.5cm, left=1cm, heightrounded, marginparwidth=2.5cm, marginparsep=0.5cm]{geometry}
+  - \DeclareRobustCommand{\logo}[1]{\scalerel*{\includegraphics{#1}}{\strut}}
+  #- \DeclareRobustCommand{\logo}[1]{\begingroup\normalfont\includegraphics[height=\fontcharht\font`\B]{{#1}}\endgroup}
+  - \makeatletter \def\lst@gkeywords@sty{\bfseries} \makeatother
+  - \usepackage{scrlayer-scrpage}
+  - \ifoot{{\huge \logo{logos/aptitek.pdf}}}
+  #- \renewcommand\maketitle{\includepdf[pages=-,pagecommand={},width=\textwidth]{firstpage.pdf}}
+
+  # MATH
+  - \usepackage{tfrupee}
+  - \usepackage{stmaryrd}
+
+  - \DeclareFontFamily{U}{mathb}{\hyphenchar\font45}
+  - \DeclareFontShape{U}{mathb}{m}{n}{<5> <6> <7> <8> <9> <10> gen * mathb <10.95> mathb10 <12> <14.4> <17.28> <20.74> <24.88> mathb12}{}
+  - \DeclareSymbolFont{mathb}{U}{mathb}{m}{n}
+  - \DeclareMathSymbol{\bigvarstar}{2}{mathb}{"0F}
+
+  - \DeclareFontFamily{U}{FdSymbolC}{}
+  - \DeclareFontShape{U}{FdSymbolC}{m}{n}{<-> s * FdSymbolC-Book}{}
+  - \DeclareSymbolFont{fdarrows}{U}{FdSymbolC}{m}{n}
+  - \DeclareMathSymbol{\leftblackspoon}{2}{fdarrows}{"6E}
+  - \DeclareMathSymbol{\leftrightspoon}{2}{fdarrows}{"70}
+  - \newcommand{\superscript}[2]{{#1}^{#2}}
+  - \newcommand{\subscript}[2]{{#1}_{#2}}
+  - \newcommand{\txt}[1]{\text{\mathfont\textit {#1}}}
